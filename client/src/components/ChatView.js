@@ -56,7 +56,7 @@ const ChatView = () => {
     const aiModel = selected
 
     //const BASE_URL = process.env.REACT_APP_BASE_URL
-    const BASE_URL = "https://chatgpt-with-dall-e.onrender.com"
+    const BASE_URL = "https://chatgpt-with-dall-e.onrender.com/"
     const PATH = aiModel === options[0] ? 'davinci' : 'dalle'
     const POST_URL = BASE_URL + PATH
 
