@@ -1,10 +1,10 @@
 import React from 'react'
-import { MdComputer } from 'react-icons/md'
-import ReactMarkdown from 'react-markdown'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { MdComputer } from 'react-icons/md' //This is a React component that renders an icon for a computer.
+import ReactMarkdown from 'react-markdown' //This is a React component that can be used to render Markdown text. 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter' //This is a syntax highlighter that can be used to highlight code snippets.
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism' //This is a dark color scheme for the Prism syntax highlighter.
 import remarkGfm from 'remark-gfm'
-import moment from 'moment'
+import moment from 'moment' //library that helps you work with dates and times.
 import Image from './Image'
 
 /**

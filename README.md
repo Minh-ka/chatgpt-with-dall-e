@@ -30,7 +30,7 @@ cd server && npm i
 ### Client
 1. `cd client`
 2. copy `.env.example` to `.env`
-3. add your fiirebase config and server url
+3. add your firebase config and server url
 4. make sure you have added `.env` to your `.gitignore` file
 
 ## run

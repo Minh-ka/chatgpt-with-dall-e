@@ -16,7 +16,7 @@ try {
   console.error('Error loading environment variables:', error)
   process.exit(1)
 }
-
+console.log(process.env.OPENAI_API_KEY)
 // Create OpenAI configuration
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -70,11 +70,11 @@ app.post('/davinci', async (req, res) => {
     const response = await openai.createCompletion({
       model: 'text-davinci-003',
       prompt: `
-I want you to reply to all my questions in markdown format. 
-Q: ${cleanPrompt}?.
-A: `,
-      temperature: 0.5,
-      max_tokens: 500,
+        I want you to reply to all my questions in markdown format. 
+        Q: ${cleanPrompt}?.
+        A: `,
+      temperature: 0.1,
+      max_tokens: 300,
       top_p: 0.5,
       frequency_penalty: 0.5,
       presence_penalty: 0.2,
